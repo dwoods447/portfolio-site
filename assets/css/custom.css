@@ -1,0 +1,141 @@
+#demo01{
+    animatedIn: lightSpeedIn;
+    animatedOut: bounceOutDown;
+    animationDuration: 0.6s;
+}
+#closebt-container {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+
+.flexbox-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.closebt {
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.skill-list{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    list-style-type: none;
+}
+.skill-list li{
+    width: 90px;
+    height: 90px;
+    flex-shrink: 1;
+    overflow: hidden;
+    padding: 0.5em;
+    margin: 1em;
+    /* margin: 0;
+    
+    border: 1px solid #ddd;
+    border-top: none;
+    border-bottom: none;
+    border-right: none; */
+}
+
+.view-list li{
+    display: inline-block;
+    margin: 0.5em;
+}
+
+.skill-list li > img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.technologies{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: left;
+}
+.technologies div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 75px;
+    overflow: hidden;
+    
+}
+.devi-con{
+    min-width: 30px;
+    min-height: 30px;
+    margin: 0.5em;
+}
+.icon{
+    width: 40px;
+    height: 40px;
+}
+.icon-alt{
+    width: 120px;
+    height: 120px
+}
+.tech-list{
+    max-width: 85%;
+}
+.tech-list-item{
+    display: inline-block;
+    background-color: #000;
+    padding: 0.3em;
+    margin: 0.1em;
+}
+.modal-inner-content{
+    color: #fff;
+    padding: 1em;
+    margin: 1em;
+}
+
+.skill-section{
+    padding: 0.5em;
+}
+
+.skill-section h3{
+    width: 200px;
+    margin: 25px auto;
+    text-align: center;
+}
+
+.details{
+    background-color: #ddd;
+    padding: 1em;
+    max-width: 50%;
+}
+.modal-title{
+    padding: 0.8em; 
+    margin: 0.3em;
+}
+@media screen and (max-width: 846px){
+
+    .node-mobile{
+        width: 40px;
+        height: 40px;
+    }
+}
