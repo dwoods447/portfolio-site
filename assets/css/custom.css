@@ -11,6 +11,21 @@
 }
 
 
+.closebt {
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transform: rotate(-45deg);
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+
+.closebt:hover {
+	transform:rotate(90deg);
+}
+
 
 .flexbox-container{
     display: flex;
@@ -20,14 +35,7 @@
     align-content: center;
 }
 
-.closebt {
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -ms-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    transition: all 0.2s;
-    cursor: pointer;
-}
+
 
 .skill-list{
     margin: 0;
@@ -70,6 +78,7 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+    height: 60px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -122,6 +131,7 @@
     margin: 25px auto;
     text-align: center;
 }
+
 
 .details{
     background-color: #ddd;
