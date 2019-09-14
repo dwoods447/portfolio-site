@@ -18,9 +18,34 @@
 		<link rel="stylesheet" href="./assets/css/custom.css">
 	</head>
 	<body class="is-preload">
+			<style>
+				@media screen and (min-width: 982px){
+					#myVideo {
+					position: fixed;
+					left: -65.8%;
+					bottom: 0;
+					width: 100vw;
+					min-height: 100vh;
+					overflow: hidden;
+					z-index: -1000;
+					}
 
+					#header{
+						position: fixed;	
+					}
+				}
+				@media screen and (max-width: 981px){
+					#myVideo {
+						display: none;
+					}
+				}
+				
+			</style>
 		<!-- Header -->
 			<header id="header">
+				<video autoplay muted loop id="myVideo">
+					<source src="./videos/bd-video.mp4" type="video/mp4">
+				</video>
 				<div class="inner">
 					<a href="#" class="image avatar"><img src="./images/demaria-woods.jpg" alt="" /></a>
 					<h1><strong>I am Demaria Woods</strong>, <br/>a Full Stack Web Developer
