@@ -40,20 +40,27 @@
 .skill-list{
     margin: 0;
     padding: 0;
-    display: flex;
+    display: block;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     list-style-type: none;
 }
+
+.skill-block{
+   
+    width: 25%;
+    margin: 15px;
+}
+
 .skill-list li{
     width: 90px;
     height: 90px;
     flex-shrink: 1;
     overflow: hidden;
     padding: 0.5em;
-    margin: 1em;
+    margin: 1em auto
     /* margin: 0;
     
     border: 1px solid #ddd;
@@ -128,6 +135,11 @@
 
 .skill-section{
     padding: 0.5em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
 }
 
 .skill-section h3{
@@ -140,7 +152,7 @@
 .details{
     background-color: #ddd;
     padding: 1em;
-    max-width: 50%;
+    max-width: 60%;
 }
 .modal-title{
     padding: 0.8em; 

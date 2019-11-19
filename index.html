@@ -38,6 +38,7 @@
 					min-height: 100vh;
 					overflow: hidden;
 					z-index: -1000;
+			         
 					}
 
 					#header{
@@ -49,21 +50,31 @@
 					#myVideo {
 						display: none;
 					}
+					.details{
+						width: 60%;
+						min-width: 60%;
+						margin: 0 auto;
+						max-width: 80%;
+					}
 				}
 				.work-item > .row> div.col-xs-6{
 					padding: 0 0 0 0.9em;
 				}
-				
+				.error{
+					color: red;
+					font-weight: 800;
+				}
 			</style>
 		<!-- Header -->
 			<header id="header">
-				<video autoplay muted loop id="myVideo">
-					<source src="./videos/bd-video.mp4" type="video/mp4">
-				</video>
+				<!-- <video autoplay muted loop id="myVideo">
+					<source src="./videos/bg-video-2.mp4" type="video/mp4">
+					<img src="./images/bg.jpg" alt="">
+				</video> -->
 				<div class="inner">
-					<a href="#" class="image avatar"><img src="./images/demaria-woods.jpg" alt="" /></a>
-					<h1><strong>I am Demaria Woods</strong>, <br/>a Full Stack Web Developer
-					thats loves creating and coding.</h1>
+					<a href="#" class="image avatar" style="display: none;"><img src="./images/demaria-woods-2.jpg" alt="" /></a>
+					<h1>I am <span style="font-weight: 700;">Demaria Woods</span>, <br/>a Full Stack Web Developer
+					thats loves solving problems.</h1>
 				</div>
 			</header>
 
@@ -75,7 +86,7 @@
 						<header class="major">
 							<h2>About Me</h2>
 						</header>
-						<p>Hello all, my name is Demaria Woods, I'm a 5-year US Navy veteran and graduate of the University of Houston, earning a Bachelor's of Science in Computer Information Systems with a minor in Computer Graphics Technology. I work as a full-time Web Developer for the University of Houston located in Houston, TX. I got into coding my sophomore year of college using <a href="https://www.codecademy.com/" target="_blank">Codecademy</a> and then later <a href="https://www.freecodecamp.org" target="_blank">freecodecamp.com.</a> I became more curious about the web so I started learning more technologies such as Node.js, Vue.js and building REST APIs etc etc.  I hope that once you view my work, you will enjoy my portfolio.</p>
+						<p>Hello all, my name is Demaria Woods, I'm a 5-year US Navy veteran and graduate of the University of Houston, earning a Bachelor's of Science in Computer Information Systems with a minor in Computer Graphics Technology. I work as a full-time Web Developer for the University of Houston located in Houston, TX. I got into coding my sophomore year of college using <a href="https://www.codecademy.com/" target="_blank">Codecademy</a> and then later using <a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp.com.</a> I became curious about the web so I started learning technologies such as Node.js, Vue.js and building REST APIs.  I hope that once you view my work, you will enjoy my portfolio.</p>
 						<ul class="actions">
 							<li><a href="#two" class="button">View My Work</a></li>
 							<li><a href="#three" class="button">Contact Me</a></li>
@@ -85,62 +96,70 @@
 					<section id="">
 						<h2>Skills</h2>
 						<div class="skill-section">
-								<h3>FRONT-END</h3>
-								<ul class="skill-list">
-									<li>
-										<img src="./images/skills/html.png" alt="" class="img-responsive img-centered logo">
-									</li>
-									<li>
-										<img src="./images/skills/css.png" alt="" class="img-responsive img-centered logo">
-									</li>
-									<li>
-										<img src="./images/skills/javascript.png" alt="" class="img-responsive img-centered logo">
-									</li>
-								
-									<li>
-										<img src="./images/skills/jquery.svg" alt="" class="img-responsive img-centered logo">
-									</li>
-									<li>
-										<img src="./images/skills/vue.png" alt="" class="img-responsive img-centered logo">
-									</li>
-	
-									<li>
-										<img src="./images/skills/bootstrap.png" alt="" class="img-responsive img-centered logo">
-									</li>
+							 <div class="skill-block">
+									<h3>FRONT-END</h3>
+									<ul class="skill-list">
+										<li>
+											<img src="./images/skills/html.png" alt="" class="img-responsive img-centered logo" title="HTML5">
+										</li>
+										<li>
+											<img src="./images/skills/css.png" alt="" class="img-responsive img-centered logo" title="CSS3">
+										</li>
+										<li>
+											<img src="./images/skills/javascript.png" alt="" class="img-responsive img-centered logo" title="JavaScript">
+										</li>
 									
-	
-									
-									
-								</ul>
-								<h3>BACK-END</h3>
-								<ul class="skill-list">
-									<li>
-										<img src="./images/skills/express.png" alt="" class="img-responsive img-centered logo">
-									</li>
-									<li>
-										<img src="./images/skills/rails.png" lass="img-responsive img-centered logo">
-									</li>
-									<li>
-										<img src="./images/skills/node.png" alt="" class="img-responsive img-centered logo">
-									</li>
-	
-									<li>
-										<img src="./images/skills/laravel.svg" alt="" class="img-responsive img-centered logo">
-									</li>
-									<li>
-											<img src="./images/skills/php.png" lass="img-responsive img-centered logo">
-									</li>
-								</ul>
-	
-								<h3>DATABASES</h3>
-								<ul class="skill-list">
-									<li>
-											<img src="./images/skills/mysql.jpg" alt="" class="img-responsive img-centered logo">
-									</li>
-									<li>
-											<img src="./images/skills/postgresql.png" alt="" class="img-responsive img-centered logo">
-									</li>
-								</ul>
+										<li>
+											<img src="./images/skills/jquery.svg" alt="" class="img-responsive img-centered logo" title="JQuery">
+										</li>
+										<li>
+											<img src="./images/skills/vue.png" alt="" class="img-responsive img-centered logo" title="Vue.js">
+										</li>
+		
+										<li>
+											<img src="./images/skills/bootstrap.png" alt="" class="img-responsive img-centered logo" title="Bootstrap">
+										</li>
+										
+		
+										
+										
+									</ul>
+							 </div>
+							 
+							 <div class="skill-block">
+									<h3>BACK-END</h3>
+									<ul class="skill-list">
+										<li>
+											<img src="./images/skills/express.png" alt="" class="img-responsive img-centered logo" title="Express.js">
+										</li>
+										<li>
+											<img src="./images/skills/rails.png" lass="img-responsive img-centered logo" title="RubyonRails">
+										</li>
+										<li>
+											<img src="./images/skills/node.png" alt="" class="img-responsive img-centered logo" title="Node.js">
+										</li>
+		
+										<li>
+											<img src="./images/skills/laravel.svg" alt="" class="img-responsive img-centered logo" title="Laravel - The PHP Framework">
+										</li>
+										<li>
+												<img src="./images/skills/php.png" lass="img-responsive img-centered logo" title="PHP">
+										</li>
+									</ul>
+		
+							 </div>
+
+							<div class="skill-block">
+									<h3>DATABASES</h3>
+									<ul class="skill-list">
+										<li>
+												<img src="./images/skills/mysql.jpg" alt="" class="img-responsive img-centered logo" title="MySQL">
+										</li>
+										<li>
+												<img src="./images/skills/postgresql.png" alt="" class="img-responsive img-centered logo" title="PostgreSQL">
+										</li>
+									</ul>	
+							</div>			
 						</div>
 						
 					</section>
@@ -154,7 +173,6 @@
 								<article class="col-6 col-12-xsmall work-item">
 										<a href="#animatedModal-6" id="modal06" class="image fit thumb"><img src="./images/fulls/itlalian-restauraunt.png" alt="" /></a>
 										<h3>Online Italian Restauraunt App</h3>
-										<p><span style="color:red;">Work in progress...</span></p>
 										<div class="row">
 												<div class="col-xs-6">
 														<p><a href="https://online-italian-restauraunt.herokuapp.com/" target="_blank">View on Heroku</a></p>
@@ -428,7 +446,7 @@
 						<li><a href="mailto:dwoods447@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
 					<ul class="copyright">
-						<li>&copy; demarwoods.com</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; demarwoods.com</li><li>Design: <a href="https://html5up.net/strata">HTML5 UP</a></li>
 					</ul>
 				</div>
 			</footer>
@@ -477,16 +495,19 @@
 												  </a>
 									   </div>	  
 									</div>
+								<div class="modal-inner-content">	
 								  <div class="flexbox-container">
 							  
 									  <div class="modal-inner-content">
 											  <h2>Technical specification</h2>
 											  <p>The Apex Legends Stat Tracker is a simple application that utilizes the 3rd party API Tracker Network to retrieve player stats. User can enter their gaming platform and gamertag and the app is able to retrieve up to date stats.</p>
+											  <p>Also if you play on the origin platform feel free to add me: kingW00ds447</p>
 											  <h2>Responsibilities</h2>
 											  <p>I developed the front and the back-end of the application. </p>
 									  </div>
 									  
 								  </div>
+								</div>
 								</div>
 								<div class="col-lg-4">
 									<div class="modal-inner-content">
@@ -521,6 +542,7 @@
 														</svg></a>
 													  </li>
 												  </ul>
+											<p class="error"><span>Note:</span> <span>Please be patient when viewing Heroku, the dynos take a few seconds to load</span></p>
 										  </div>
 									</div>
 								  
@@ -550,7 +572,7 @@
 							<div class="row">
 									<div class="col-lg-8">
 										<div class="modal-inner-content">
-											  <div id="onlineBookStoreCarouselIndicators" class="carousel slide" data-ride="carousel">
+											  <div id="onlineBookStoreCarouselIndicators" class="carousel slide" data-ride="carousel" data-interval="13000">
 													  <ol class="carousel-indicators">
 														<li data-target="#onlineBookStoreCarouselIndicators" data-slide-to="0" class="active"></li>
 														<li data-target="#onlineBookStoreCarouselIndicators" data-slide-to="1"></li>
@@ -577,15 +599,22 @@
 													  </a>
 										   </div>	  
 										</div>
-									  <div class="flexbox-container">
+										<div class="modal-inner-content">	
+									    <div class="flexbox-container">
 								  
 										  <div class="modal-inner-content">
 												  <h2>Technical specification</h2>
 												  <p>The Online Book Store, multi-component app that allows users to sign up and then sign in to their account. The simple application uses jsonwebtokens for authentication. Users are to add items to their cart and checkout and view orders. The book covers were obtained from the <a href="https://openlibrary.org/dev/docs/api/books" target="_blank">Open Library Books API</a>. The rest of the book data was randomly generated using <a href="https://mockaroo.com" target="_blank">Mockaroo.</a> Built a RESTful API using Node and Express.js</p>
+												  <br/>
+												  <h4>Database design</h4>
+												  <img src="./images/modal/book-store-erd.PNG">
+												  <br/>
+												  <br/>
 												  <h2>Responsibilities</h2>
-												  <p>I was the front and back-end developer in this project</p>
+												  <p>I was the front and back-end developer in this project. I also created the database design.</p>
 										  </div>
 										  
+									  </div>
 									  </div>
 									</div>
 									<div class="col-lg-4">
@@ -607,7 +636,7 @@
 														  <li class="tech-list-item">Moment</li>
 														  <li class="tech-list-item">Vue-Paginate</li>
 														  <li class="tech-list-item">Vuex-Persistedstate</li>
-														  >
+														  
 												  </ul>
 											</div>
 										  
@@ -628,6 +657,7 @@
 													  </svg></a>
 													</li>
 												</ul>
+											<p class="error"><span>Note:</span> <span>Please be patient when viewing Heroku, the dynos take a few seconds to load</span></p>
 										</div>
 										</div>
 									  
@@ -659,7 +689,7 @@
 								<div class="row">
 										<div class="col-lg-8">
 											<div class="modal-inner-content">
-												  <div id="onlineJobPortalCarouselIndicators" class="carousel slide" data-ride="carousel">
+												  <div id="onlineJobPortalCarouselIndicators" class="carousel slide" data-ride="carousel" data-interval="13000">
 														  <ol class="carousel-indicators">
 															<li data-target="#onlineJobPortalCarouselIndicators" data-slide-to="0" class="active"></li>
 															<li data-target="#onlineJobPortalCarouselIndicators" data-slide-to="1"></li>
@@ -686,17 +716,22 @@
 														  </a>
 											   </div>	  
 											</div>
+										<div class="modal-inner-content">		
 										  <div class="flexbox-container">
-									  
 											  <div class="modal-inner-content">
 													  <h2>Technical specification</h2>
-													  <p>The Online Job Portal allows job seekers to search, apply, and favorite jobs. It also allows employers to post jobs and view applicants. Built a RESTful API using Node and Express.js </p>
+													  <p>The Online Job Portal is a simple job portal that allows job seekers to search, apply, and favorite jobs. It also allows employers to post jobs and view applicants. Front-end built with Vue.js and back-end is a RESTful API that uses Node and Express.js </p>
+													  <br/>
+													  <h4>Database design</h4>
+													  <img src="./images/modal/job-portal-erd.PNG">
+													  <br/>
+													  <br/>
 													  <h2>Responsibilities</h2>
-													  <p>I developed the front-end and back-end of the application. </p>
+													  <p>I developed the front-end and back-end of the application and also the database design. </p>
 													  
 											  </div>
-											  
 										  </div>
+										</div>
 										</div>
 										<div class="col-lg-4">
 											<div class="modal-inner-content">
@@ -736,6 +771,7 @@
 														  </svg></a>
 														</li>
 													</ul>
+												<p class="error"><span>Note:</span> <span>Please be patient when viewing Heroku, the dynos take a few seconds to load</span></p>	
 											</div>
 											</div>
 										  
@@ -764,7 +800,7 @@
 									<div class="row">
 											<div class="col-lg-8">
 												<div class="modal-inner-content">
-													  <div id="universityClassSearchCarouselIndicators" class="carousel slide" data-ride="carousel">
+													  <div id="universityClassSearchCarouselIndicators" class="carousel slide" data-ride="carousel" data-interval="13000">
 															  <ol class="carousel-indicators">
 																<li data-target="#universityClassSearchCarouselIndicators" data-slide-to="0" class="active"></li>
 																<li data-target="#universityClassSearchCarouselIndicators" data-slide-to="1"></li>
@@ -791,6 +827,7 @@
 															  </a>
 												   </div>	  
 												</div>
+											<div class="modal-inner-content">	
 											  <div class="flexbox-container">
 										  
 												  <div class="modal-inner-content">
@@ -801,6 +838,7 @@
 												  </div>
 												  
 											  </div>
+											</div>
 											</div>
 											<div class="col-lg-4">
 												<div class="modal-inner-content">
@@ -842,7 +880,7 @@
 										<div class="row">
 												<div class="col-lg-8">
 													<div class="modal-inner-content">
-														  <div id="nextVeteranCarouselIndicators" class="carousel slide" data-ride="carousel">
+														  <div id="nextVeteranCarouselIndicators" class="carousel slide" data-ride="carousel" data-interval="13000">
 																  <ol class="carousel-indicators">
 																	<li data-target="#nextVeteranCarouselIndicators" data-slide-to="0" class="active"></li>
 																	<li data-target="#nextVeteranCarouselIndicators" data-slide-to="1"></li>
@@ -907,6 +945,7 @@
 																  </svg></a> 
 																</li>
 															</ul>
+															<p class="error"><span>Note:</span> <span>Please be patient when viewing Heroku, the dynos take a few seconds to load</span></p>
 														</div>
 													</div>
 												  
@@ -937,7 +976,7 @@
 							<div class="row">
 									<div class="col-lg-8">
 										<div class="modal-inner-content">
-											  <div id="onlineBookStoreCarouselIndicators" class="carousel slide" data-ride="carousel">
+											  <div id="onlineBookStoreCarouselIndicators" class="carousel slide" data-ride="carousel" data-interval="13000">
 													  <ol class="carousel-indicators">
 														<li data-target="#italianRestaurauntCarouselIndicators" data-slide-to="0" class="active"></li>
 														<li data-target="#italianRestaurauntCarouselIndicators" data-slide-to="1"></li>
@@ -945,13 +984,13 @@
 													  </ol>
 													  <div class="carousel-inner">
 														<div class="carousel-item active slide-item">
-														  <img class="d-block w-100" src="http://placehold.it/1920x1080" alt="First slide">
+														  <img class="d-block w-100" src="./images/slides/online-italian-restauraunt.gif" alt="First slide">
 														</div>
 														<div class="carousel-item slide-item">
-														  <img class="d-block w-100" src="http://placehold.it/1920x1080" alt="Second slide">
+														  <img class="d-block w-100" src="./images/slides/online-italian-restauraunt-2.gif" alt="Second slide">
 														</div>
 														<div class="carousel-item slide-item">
-														  <img class="d-block w-100" src="http://placehold.it/1920x1080" alt="Third slide">
+														  <img class="d-block w-100" src="./images/slides/online-italian-restauraunt-3.gif" alt="Third slide">
 														</div>
 													  </div>
 													  <a class="carousel-control-prev" href="#italianRestaurauntCarouselIndicators" role="button" data-slide="prev">
@@ -962,19 +1001,25 @@
 														<span class="carousel-control-next-icon" aria-hidden="true"></span>
 														<span class="sr-only">Next</span>
 													  </a>
-										   </div>	  
+										       </div>	  
 										</div>
-									  <div class="flexbox-container">
-								  
-										  <div class="modal-inner-content">
-												  <h2>Technical specification</h2>
-												  <p>The Online Restauraunt allows users to order delivery or pickup food and add to cart. It uses the smartystreets API to lookup US postal addresses.</p>
-												  <h2>Responsibilities</h2>
-												  <p><span style="color:red;">Work in progress...</span></p>
-										  </div>
-										  
-									  </div>
-									</div>
+										<div class="modal-inner-content">		
+											<div class="flexbox-container">
+												<div class="modal-inner-content">
+														<h2>Technical specification</h2>
+														<p>The Online Restauraunt allows users to order delivery or pickup food and add to cart. It uses the smartystreets API to lookup US postal addresses. </p>
+														<br/>
+														<h4>Database design</h4>
+														<img src="./images/modal/italian-restauraunt-erd.PNG" style="width: 98%;">
+														<br/>
+														<br/>
+														<h2>Responsibilities</h2>
+														<p>I developed the front-end and back-end of the application and also the database design. </p>
+														
+												</div>
+											</div>
+									   </div>
+								    </div>
 									<div class="col-lg-4">
 										<div class="modal-inner-content">
 											<div class="details">
@@ -1012,6 +1057,7 @@
 													  </svg></a>
 													</li>
 												</ul>
+												<p class="error"><span>Note:</span> <span>Please be patient when viewing Heroku, the dynos take a few seconds to load</span></p>
 										</div>
 										</div>
 									  
@@ -1043,39 +1089,45 @@
 				$("#modal01").animatedModal({
 					animatedIn: 'lightSpeedIn',
 					animatedOut: 'bounceOutDown',
-					color: '#622175',
+					color: "rgb(98, 33, 117, 1)",
+					color: "#622175"
 				});
 
 				$("#modal02").animatedModal({
 					animatedIn: 'lightSpeedIn',
 					animatedOut: 'bounceOutDown',
-					color: '#622175',
+					color: "rgb(98, 33, 117, 1)",
+					color: "#622175"
 				});
 
 
 				$("#modal03").animatedModal({
 					animatedIn: 'lightSpeedIn',
 					animatedOut: 'bounceOutDown',
-					color: '#622175',
+					color: "rgb(98, 33, 117, 1)",
+					color: "#622175"
 				});
 
 				$("#modal04").animatedModal({
 					animatedIn: 'lightSpeedIn',
 					animatedOut: 'bounceOutDown',
-					color: '#622175',
+					color: "rgb(98, 33, 117, 1)",
+					color: "#622175"
 				});
 
 
 				$("#modal05").animatedModal({
 					animatedIn: 'lightSpeedIn',
 					animatedOut: 'bounceOutDown',
-					color: '#622175',
+					color: "rgb(98, 33, 117, 1)",
+					color: "#622175"
 				});
 
 				$("#modal06").animatedModal({
 					animatedIn: 'lightSpeedIn',
 					animatedOut: 'bounceOutDown',
-					color: '#622175',
+					color: "rgb(98, 33, 117, 1)",
+					color: "#622175"
 				});
 
 			

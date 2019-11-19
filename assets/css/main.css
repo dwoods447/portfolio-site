@@ -2591,9 +2591,9 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background-color: #1f1815;
+		background-color: rgb(98, 33, 117);
 		background-attachment: scroll,scroll;
-		background-image: url("images/overlay.png"), url("../../images/bg-2.png");
+		background-image: url("images/overlay.png"), url("../../images/bg.png");
 		background-position: top left,top left;
 		background-repeat: repeat,no-repeat;
 		background-size: auto,150%;
@@ -2605,6 +2605,7 @@ input, select, textarea {
 		text-align: right;
 		top: 0;
 		width: 35%;
+		overflow: hidden;
 	}
 
 		#header > * {
@@ -2632,7 +2633,7 @@ input, select, textarea {
 		}
 
 		#header h1 {
-			color: rgba(255, 255, 255, 0.5);
+			color: rgba(255, 255, 255, 1);
 			font-size: 3.35em;
 			line-height: 1.75em;
 			margin: 0;
@@ -2640,7 +2641,7 @@ input, select, textarea {
 
 		#header .image.avatar {
 			margin: 0 0 1em 0;
-			width: 6.25em;
+			width: 9.25em;
 		}
 
 /* Footer */
@@ -3078,7 +3079,7 @@ input, select, textarea {
 			#footer {
 				background-attachment: scroll;
 				background-color: #1f1815;
-				background-image: url("images/overlay.png"), url("../../images/bg-2.jpg");
+				background-image: url("images/overlay.png"), url("../../images/bg.jpg");
 				background-position: top left,						bottom center;
 				background-repeat: repeat,							no-repeat;
 				background-size: auto,							cover;
